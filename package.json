@@ -19,8 +19,12 @@
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
+		"@fontsource/roboto": "^4.5.8",
+		"@fontsource/roboto-mono": "^4.5.10",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.33.0",
+		"@smui/button": "7.0.0-beta.8",
+		"@smui/icon-button": "7.0.0-beta.8",
 		"@smui/top-app-bar": "7.0.0-beta.8",
 		"@sveltejs/adapter-auto": "^2.0.1",
 		"@sveltejs/kit": "^1.16.2",
