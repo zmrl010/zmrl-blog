@@ -8,7 +8,10 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {
 			sass: {
-				includePaths: [resolve(__dirname, 'src/theme'), resolve(__dirname, 'node_modules')]
+				includePaths: [
+					resolve(__dirname, 'src/theme'),
+					resolve(__dirname, 'node_modules')
+				]
 			} satisfies Partial<LegacyStringOptions<'async'>>
 		}
 	},
