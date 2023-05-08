@@ -1,10 +1,11 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vitest/config';
 import type { LegacyStringOptions } from 'sass';
+import iconsPlugin from 'unplugin-icons/vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-	plugins: [sveltekit()],
+	plugins: [sveltekit(), iconsPlugin({ compiler: 'svelte' })],
 	css: {
 		preprocessorOptions: {
 			sass: {

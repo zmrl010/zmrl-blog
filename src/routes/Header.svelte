@@ -6,6 +6,10 @@
 		AutoAdjust
 	} from '@smui/top-app-bar';
 	import IconButton from '@smui/icon-button';
+	import IconFileDownload from '~icons/mdi/file-download';
+	import IconPrint from '~icons/mdi/printer';
+	import IconBookmark from '~icons/mdi/bookmark';
+	import IconMenu from '~icons/mdi/menu';
 
 	export let topAppBar: TopAppBar;
 	export let title: string;
@@ -15,18 +19,18 @@
 	<TopAppBar bind:this={topAppBar} variant="standard">
 		<Row>
 			<Section>
-				<IconButton class="material-icons">menu</IconButton>
+				<IconButton class="material-icons"><IconMenu /></IconButton>
 				<Title>{title}</Title>
 			</Section>
 			<Section align="end" toolbar>
 				<IconButton class="material-icons" aria-label="Download">
-					file_download
+					<IconFileDownload />
 				</IconButton>
 				<IconButton class="material-icons" aria-label="Print this page">
-					print
+					<IconPrint />
 				</IconButton>
 				<IconButton class="material-icons" aria-label="Bookmark this page">
-					bookmark
+					<IconBookmark />
 				</IconButton>
 			</Section>
 		</Row>
